@@ -49,6 +49,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define V5_LOW                      2434        //5V low level (LED power rolled back to stay above this limit)
 #define V5_CAT                      2206        //5V catastrophic level (Host USB port potential to shut down)
 
+
+
 //LED Mapping - More practically generated from a spreadsheet program
 //id: ID of the LED (Sync with PCB callouts)
 //x: Physical X coordinate of LED (units do not matter)
@@ -149,6 +151,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  { .id = 86, .x = 10.48, .y = 2.25, .adr = { .drv = 1, .cs = 3, .swr = 8, .swg = 7, .swb = 9 }, .scan = 254 }, \
  { .id = 87, .x = 10.48, .y = 1.5, .adr = { .drv = 1, .cs = 3, .swr = 11, .swg = 10, .swb = 12 }, .scan = 254 }, \
 };
+
 
 #define USB_LED_INDICATOR_ENABLE    //Comment out to disable indicator functionality
 #ifdef USB_LED_INDICATOR_ENABLE     //Scan codes refer to actual key matrix codes, not KC_* (255 to disable)
